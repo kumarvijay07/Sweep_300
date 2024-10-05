@@ -4,9 +4,6 @@ import Navbar from '../Navbar/Navbar';
 const Home = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Navbar */}
-      <Navbar />
-
       {/* Hero Section */}
       <header className="bg-gray-900 text-white py-16">
         <div className="container mx-auto px-6 md:px-12 text-center">
