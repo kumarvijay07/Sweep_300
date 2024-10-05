@@ -1,7 +1,32 @@
+// Home.js
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
+  const posts = [
+    {
+      id: 1,
+      title: 'Post Title 1',
+      description: 'This is a brief description of the blog post. Click to read more!',
+      imgSrc: 'https://via.placeholder.com/400x250',
+      content: 'This is the full content of Post Title 1. It contains all the details you need to know about this topic.',
+    },
+    {
+      id: 2,
+      title: 'Post Title 2',
+      description: 'This is a brief description of the blog post. Click to read more!',
+      imgSrc: 'https://via.placeholder.com/400x250',
+      content: 'This is the full content of Post Title 2. It contains all the details you need to know about this topic.',
+    },
+    {
+      id: 3,
+      title: 'Post Title 3',
+      description: 'This is a brief description of the blog post. Click to read more!',
+      imgSrc: 'https://via.placeholder.com/400x250',
+      content: 'This is the full content of Post Title 3. It contains all the details you need to know about this topic.',
+    },
+  ];
+
   return (
     <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
@@ -23,53 +48,22 @@ const Home = () => {
         <div className="container mx-auto px-6 md:px-12">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Featured Posts</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Post Card */}
-            <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <img
-                src="https://via.placeholder.com/400x250"
-                alt="Post Thumbnail"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold">Post Title 1</h3>
-                <p className="mt-2 text-gray-600">This is a brief description of the blog post. Click to read more!</p>
-                <a href="/post/1" className="mt-4 inline-block text-teal-500 font-semibold">
-                  Read More
-                </a>
+            {posts.map(post => (
+              <div key={post.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img
+                  src={post.imgSrc}
+                  alt="Post Thumbnail"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold">{post.title}</h3>
+                  <p className="mt-2 text-gray-600">{post.description}</p>
+                  <Link to={`/post/${post.id}`} className="mt-4 inline-block text-teal-500 font-semibold">
+                    Read More
+                  </Link>
+                </div>
               </div>
-            </div>
-
-            {/* Repeat Post Card for more posts */}
-            <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <img
-                src="https://via.placeholder.com/400x250"
-                alt="Post Thumbnail"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold">Post Title 2</h3>
-                <p className="mt-2 text-gray-600">This is a brief description of the blog post. Click to read more!</p>
-                <a href="/post/2" className="mt-4 inline-block text-teal-500 font-semibold">
-                  Read More
-                </a>
-              </div>
-            </div>
-
-            {/* Another Post Card */}
-            <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <img
-                src="https://via.placeholder.com/400x250"
-                alt="Post Thumbnail"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold">Post Title 3</h3>
-                <p className="mt-2 text-gray-600">This is a brief description of the blog post. Click to read more!</p>
-                <a href="/post/3" className="mt-4 inline-block text-teal-500 font-semibold">
-                  Read More
-                </a>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
