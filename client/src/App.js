@@ -5,6 +5,7 @@ import Home from './Components/Home/Home';
 import Upload from './Components/Upload/Upload';
 import ExpandBlog from './Components/Expand/ExpandBlog';
 import About from './Components/About/About';
+import Footer from './Components/Footer/Footer';
 
 const App = () => (
   <div>
@@ -15,6 +16,7 @@ const App = () => (
       <Route path="/post/:postId" element={<ExpandBlog />} />
       <Route path="/about" element={<About />} />
     </Routes>
+    <Footer />
   </div>
 );
 
