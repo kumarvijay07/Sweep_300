@@ -66,7 +66,7 @@ const Navbar = () => {
                 About
               </NavLink>
               <NavLink
-                to="/calendar"
+                to="/Calendar"
                 className={({ isActive }) =>
                   isActive
                     ? "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -167,7 +167,7 @@ const Navbar = () => {
               About
             </NavLink>
             <NavLink
-              to="/calendar"
+              to="/Calendar"
               onClick={handleLinkClick}
               className={({ isActive }) =>
                 isActive
