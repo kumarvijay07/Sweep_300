@@ -108,7 +108,7 @@ const Home = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search posts..."
             className="w-full md:w-1/2 p-3 rounded-lg shadow-sm border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
-          />
+          /> 
         </div>
       </section>
 
