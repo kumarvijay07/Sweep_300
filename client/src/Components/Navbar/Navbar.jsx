@@ -156,7 +156,7 @@ const Navbar = () => {
               Upload
             </NavLink>
             <NavLink
-              to="/projects"
+              to="/About"
               onClick={handleLinkClick}
               className={({ isActive }) =>
                 isActive
@@ -164,7 +164,7 @@ const Navbar = () => {
                   : "text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               }
             >
-              Projects
+              About
             </NavLink>
             <NavLink
               to="/Calendar"
