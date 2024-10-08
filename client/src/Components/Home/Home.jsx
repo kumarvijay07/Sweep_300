@@ -3,29 +3,79 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const posts = [
-    {
-      id: 1,
-      title: 'Post Title 1',
-      description: 'This is a brief description of the blog post. Click to read more!',
-      imgSrc: 'https://via.placeholder.com/400x250',
-      content: 'This is the full content of Post Title 1. It contains all the details you need to know about this topic.',
-    },
-    {
-      id: 2,
-      title: 'Post Title 2',
-      description: 'This is a brief description of the blog post. Click to read more!',
-      imgSrc: 'https://via.placeholder.com/400x250',
-      content: 'This is the full content of Post Title 2. It contains all the details you need to know about this topic.',
-    },
-    {
-      id: 3,
-      title: 'Post Title 3',
-      description: 'This is a brief description of the blog post. Click to read more!',
-      imgSrc: 'https://via.placeholder.com/400x250',
-      content: 'This is the full content of Post Title 3. It contains all the details you need to know about this topic.',
-    },
-  ];
+ const posts = [
+  {
+    id: 1,
+    title: 'Post Title 1',
+    description: 'This is a brief description of the blog post. Click to read more!',
+    imgSrc: 'https://via.placeholder.com/400x250',
+    content: 'This is the full content of Post Title 1. It contains all the details you need to know about this topic.',
+  },
+  {
+    id: 2,
+    title: 'Post Title 2',
+    description: 'This is a brief description of the blog post. Click to read more!',
+    imgSrc: 'https://via.placeholder.com/400x250',
+    content: 'This is the full content of Post Title 2. It contains all the details you need to know about this topic.',
+  },
+  {
+    id: 3,
+    title: 'Post Title 3',
+    description: 'This is a brief description of the blog post. Click to read more!',
+    imgSrc: 'https://via.placeholder.com/400x250',
+    content: 'This is the full content of Post Title 3. It contains all the details you need to know about this topic.',
+  },
+  {
+    id: 4,
+    title: 'Post Title 4',
+    description: 'This is a brief description of the blog post. Click to read more!',
+    imgSrc: 'https://via.placeholder.com/400x250',
+    content: 'This is the full content of Post Title 4. It contains all the details you need to know about this topic.',
+  },
+  {
+    id: 5,
+    title: 'Post Title 5',
+    description: 'This is a brief description of the blog post. Click to read more!',
+    imgSrc: 'https://via.placeholder.com/400x250',
+    content: 'This is the full content of Post Title 5. It contains all the details you need to know about this topic.',
+  },
+  {
+    id: 6,
+    title: 'Post Title 6',
+    description: 'This is a brief description of the blog post. Click to read more!',
+    imgSrc: 'https://via.placeholder.com/400x250',
+    content: 'This is the full content of Post Title 6. It contains all the details you need to know about this topic.',
+  },
+  {
+    id: 7,
+    title: 'Post Title 7',
+    description: 'This is a brief description of the blog post. Click to read more!',
+    imgSrc: 'https://via.placeholder.com/400x250',
+    content: 'This is the full content of Post Title 7. It contains all the details you need to know about this topic.',
+  },
+  {
+    id: 8,
+    title: 'Post Title 8',
+    description: 'This is a brief description of the blog post. Click to read more!',
+    imgSrc: 'https://via.placeholder.com/400x250',
+    content: 'This is the full content of Post Title 8. It contains all the details you need to know about this topic.',
+  },
+  {
+    id: 9,
+    title: 'Post Title 9',
+    description: 'This is a brief description of the blog post. Click to read more!',
+    imgSrc: 'https://via.placeholder.com/400x250',
+    content: 'This is the full content of Post Title 9. It contains all the details you need to know about this topic.',
+  },
+  {
+    id: 10,
+    title: 'Post Title 10',
+    description: 'This is a brief description of the blog post. Click to read more!',
+    imgSrc: 'https://via.placeholder.com/400x250',
+    content: 'This is the full content of Post Title 10. It contains all the details you need to know about this topic.',
+  },
+];
+
 
   return (
     <div className="min-h-screen flex flex-col">
